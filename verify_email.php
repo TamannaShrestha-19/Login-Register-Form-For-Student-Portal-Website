@@ -55,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['resend'])) {
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
         $mail->Username   = 'tmnnshrsth@gmail.com';
-        $mail->Password   = 'xcyi locr bnnq codl';
+        $mail->Password   = 'pw';
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
@@ -195,3 +195,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['resend'])) {
 </body>
 
 </html>
+
