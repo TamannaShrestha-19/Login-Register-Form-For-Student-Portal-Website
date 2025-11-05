@@ -32,12 +32,12 @@ function send_mfa_otp($user_id, $email) {
         $mail->SMTPAuth = true;
 
         if ($role === 'admin') {
-            $mail->Username = 'arpanaxtha2020@gmail.com';
-            $mail->Password = 'ohek eslc uikg dqiu';
+            $mail->Username = 'admin@gmail.com';
+            $mail->Password = 'pw';
             $mail->setFrom('arpanaxtha2020@gmail.com', 'Admin Portal');
         } else {
-            $mail->Username = 'tmnnshrsth@gmail.com';
-            $mail->Password = 'xcyi locr bnnq codl';
+            $mail->Username = 'user@gmail.com';
+            $mail->Password = 'pw';
             $mail->setFrom('tmnnshrsth@gmail.com', 'User Portal');
         }
 
@@ -54,3 +54,4 @@ function send_mfa_otp($user_id, $email) {
         die("MFA email could not be sent. Mailer Error: {$mail->ErrorInfo}");
     }
 }
+
