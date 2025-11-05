@@ -16,7 +16,7 @@ if (isset($_GET['msg']) && $_GET['msg'] === 'verified') {
     <title>Student Portal</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://www.google.com/recaptcha/api.js?render=6LfYwXQrAAAAAKzzflI6J_KQ1hDy2xeg5fNP171r"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=yourrecaptchaid"></script>
 </head>
 
 <body>
@@ -156,5 +156,6 @@ if (isset($_GET['msg']) && $_GET['msg'] === 'verified') {
 
     <script src="script.js"></script>
 </body>
+
 
 </html>
