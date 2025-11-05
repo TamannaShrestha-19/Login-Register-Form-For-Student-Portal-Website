@@ -3,7 +3,7 @@ session_start();
 require 'db.php';
 
 $recaptchaToken = $_POST['recaptcha_token'] ?? '';
-$secretKey = '6LfYwXQrAAAAALugHV-04GXm_Yf6U_3Pmffparxk';
+$secretKey = 'yoursecretkey';
 
 $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$recaptchaToken");
 $responseData = json_decode($response);
@@ -102,3 +102,4 @@ file_put_contents("logins.log", date('Y-m-d H:i:s') . " ✅ Login successful (MF
 header('Location: verify_mfa.php');
 exit;
 ?>
+
