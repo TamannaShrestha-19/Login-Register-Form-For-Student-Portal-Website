@@ -2,7 +2,7 @@
 $host = 'localhost';
 $db = 'student_portal_db';
 $user = 'root';
-$pass = 'btsarmytamu#18';
+$pass = 'yourdbpw';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db;charset=utf8", $user, $pass);
@@ -15,3 +15,4 @@ try {
     die("Database connection failed: " . $e->getMessage());
 }
 ?>
+
