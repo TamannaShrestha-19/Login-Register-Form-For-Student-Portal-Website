@@ -8,7 +8,7 @@ use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 
 $recaptchaToken = $_POST['recaptcha_token'] ?? '';
-$secretKey = '6LfYwXQrAAAAALugHV-04GXm_Yf6U_3Pmffparxk';
+$secretKey = 'yoursecretkey';
 
 $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$recaptchaToken");
 $responseData = json_decode($response);
@@ -90,3 +90,4 @@ try {
 header("Location: verify_email.php?email=" . urlencode($email));
 exit;
 ?>
+
