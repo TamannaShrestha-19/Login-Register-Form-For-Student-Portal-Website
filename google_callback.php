@@ -4,8 +4,8 @@ require 'db.php';
 require_once 'vendor/autoload.php';
 
 $client = new Google_Client();
-$client->setClientId('125257450980-l5dr88lnrr5jbdt9jcrhbj6lbllrh9i8.apps.googleusercontent.com'); // Replace
-$client->setClientSecret('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'); // Replace
+$client->setClientId('yourclientID'); // Replace
+$client->setClientSecret('yourclientsecret'); // Replace
 $client->setRedirectUri('http://localhost/student_portal/google_callback.php');
 
 if (isset($_GET['code'])) {
@@ -39,3 +39,4 @@ if (isset($_GET['code'])) {
 } else {
     echo "Google login failed.";
 }
+
